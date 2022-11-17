@@ -1,0 +1,25 @@
+const input = '1181136808138180652256998517127038068335598712881207616178110868138738946012202564068884173811091181799712620787604462205074149402743655023867969191909281148';
+
+let arr = input.split("");
+
+let newArr = arr.slice();
+
+console.log(arr);
+
+
+for (let i = 0; i < input.length; i++) {
+    if (i % 3 === 0) {
+        newArr[i] = "-";
+    }
+}
+
+
+
+console.log(newArr);
+
+let strNew = newArr.join("");
+
+console.log(strNew);
+
+
+let ans = strNew.split("-");
